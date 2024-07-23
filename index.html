@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>South burguer - A melhor hamburgueria do sul</title>
+</head>
+<body class="font-sans">
+    <!--header-->
+    <header class="w-full h-[328px] rounded-md bg-gray-700 bg-home bg-cover bg-center shadow-md">
+        <div class="w-full h-full flex justify-center items-center flex-col gap-2   ">
+            <img src="./assets/South.png" alt="logo do projeto" class="p-2 w-32 h-32 rounded-full shadow-lg">
+            <h1 class="capitalize text-4xl font-bold text-white">South burguer</h1>
+            <span class="capitalize text-white font-medium">Rua 2024, bagé</span>
+
+            <div class="bg-green-700 px-4 py-2 rounded-lg mt-5" id="date-span">
+                <span class="capitalize text-white font-medium">seg à dom - 18:00 as 00:30</span>
+            </div>
+        </div>
+    </header>
+    <!--end-header-->
+
+    <h2 class="capitalize text-2xl font-bold text-center p-4 text-white">
+        Conheça o nosso cardápio 
+    </h2>
+
+    <!--initial-menu-->
+    <div id="menu">
+    <div class="py-6 flex items-center justify-center text-center font-bold uppercase">
+        <h1 >hamburgers</h1> 
+    </div>
+        <main class="grid grid-cols-1 md:grid-cols-2  gap-4 mx-auto max-w-7xl">
+            
+    
+            <!--product-item-->
+            <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                <img src="./assets/hamburguer_03.jpg" alt="Basicao"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">Basicão</p>
+                <span class="text-white font-medium text-sm">
+                    Pão levinho de fermentação natural selado na manteiga, 
+                    2 hamburgers de 160g, queijo prato e maionese da casa
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 19.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="Basicao"
+                    data-price="19.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <!--end-product-item-->
+
+            <!--product-item-->
+                <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                    <img src="./assets/hamburguer_02.jpg" alt="bacon cheese"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+                <div>
+                    <p class="capitalize font-bold text-white">bacon bruto</p>
+                    <span class="text-white font-medium text-sm">
+                        Pão levinho de fermentação natural selado na manteiga,
+                        2 hamburgers de 160g,bacon, queijo prato e maionese da casa
+                    </span>
+                    <div class="flex justify-between items-center gap-4">
+                        <p class="text-white text-sm">R$ 25.90</p>
+                        <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                        data-name="Bacon-cheese"
+                        data-price="25.90">
+                            <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            <!--end-product-item-->
+
+            <!--product-item-->
+            <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                <img src="./assets/hamburguer_01.jpg" alt="Equilibrado"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">Equilibrado</p>
+                <span class="text-white font-medium text-sm">
+                    Pão levinho de fermentação natural selado na manteiga, 
+                    2 hamburgers de 160g, queijo prato, bacon, maionese da casa, alface e tomate.
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 28.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="Equilibrado"
+                    data-price="28.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <!--end-product-item-->
+
+            <!--product-item-->
+                <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                    <img src="./assets/hamburguer_04.jpg" alt="Bafudo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+                <div>
+                    <p class="capitalize font-bold text-white">Bafudo</p>
+                    <span class="text-white font-medium text-sm">
+                        Pão levinho de fermentação natural selado na manteiga, 
+                        1 hamburger de 160g empanado, queijo prato, alface, tomate, picles,cebola e maionese da casa.
+                    </span>
+                    <div class="flex justify-between items-center gap-4">
+                        <p class="text-white text-sm">R$ 24.90</p>
+                        <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                        data-name="Bafudo"
+                        data-price="24.90">
+                            <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            <!--end-product-item-->
+
+            <!--product-item-->
+            <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                <img src="./assets/hamburguer_05.jpg" alt="saladeira"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">saladeira</p>
+                <span class="text-white font-medium text-sm">
+                    Pão levinho de fermentação natural selado na manteiga, 
+                    2 hamburgers de 160g, queijo prato, maionese da casa, alface e tomate.
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 28.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="saladeira"
+                    data-price="28.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <!--end-product-item-->
+
+            <!--product-item-->
+            <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                    <img src="./assets/hamburguer_06.jpg" alt="bafudo compacto"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+                <div>
+                    <p class="capitalize font-bold text-white">Bafudo pequeno</p>
+                    <span class="text-white font-medium text-sm">
+                        Pão levinho de fermentação natural selado na manteiga, 
+                        1 hamburgers de 160g, alface, tomate, cebola, queijo prato e maionese da casa.
+                    </span>
+                    <div class="flex justify-between items-center gap-4">
+                        <p class="text-white text-sm">R$ 22.90</p>
+                        <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                        data-name="bafudo compacto"
+                        data-price="22.90">
+                            <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            <!--end-product-item-->
+            <!--product-item-->
+            <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                <img src="./assets/hamburguer_07.jpg" alt="sustancia"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">sustância</p>
+                <span class="text-white font-medium text-sm">
+                    Pão levinho de fermentação natural selado na manteiga,
+                    cebola empanada, bacon, 1 hamburgers de 200g, queijo prato e molho barbecue.
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 32.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="sustancia"
+                    data-price="32.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <!--end-product-item-->
+
+            <!--product-item-->
+            <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                    <img src="./assets/hamburguer_08.jpg" alt="vegetariano"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+                <div>
+                    <p class="capitalize font-bold text-white">vegano</p>
+                    <span class="text-white font-medium text-sm">
+                        Pão levinho de fermentação natural selado na manteiga 
+                        1 hamburgers de 160g feito de brocolis, cebola, cenoura, alface e tomate. 
+                    </span>
+                    <div class="flex justify-between items-center gap-4">
+                        <p class="text-white text-sm">R$ 22.90</p>
+                        <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                        data-name="vegetariano"
+                        data-price="22.90">
+                            <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <!--end-product-item-->
+        </main>
+
+        <div class=" flex items-center justify-center text-center font-bold uppercase py-6">
+            <h1 >porções</h1> 
+        </div>
+
+        <main class="grid grid-cols-1 md:grid-cols-2  gap-4 mx-auto max-w-7xl">
+        <!--product-item-->
+        <div class="flex justify-center items-center gap-2 px-2 mb-3">
+            <img src="./assets/batata-frita.jpg" alt="Batata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+        <div>
+            <p class="capitalize font-bold text-white">batata frita</p>
+            <span class="text-white font-medium text-sm">
+                Batata frita cortadas perfeitamente para ficarem crocantes e douradas, acompanham maionese da casa.
+            </span>
+            <div class="flex justify-between items-center gap-4">
+                <p class="text-white text-sm">R$ 20.90</p>
+                <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                data-name="Batata"
+                data-price="20.90">
+                    <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!--end-product-item-->
+        <!--product-item-->
+        <div class="flex justify-center items-center gap-2 px-2 mb-3">
+                <img src="./assets/frango-frito.jpg" alt="frango-frito"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">frango frito</p>
+                <span class="text-white font-medium text-sm">
+                    Uma porção suculenta de frango grelhado de 500g, perfeitamente temperada,
+                    acompanhada por uma cremosa e saborosa maionese. <br>
+                    Uma combinação irresistível de sabores para uma refeição deliciosa!
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 40.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="frango-frito"
+                    data-price="40.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <!--end-product-item-->
+        </main>
+        <div class=" flex items-center justify-center text-center font-bold uppercase py-6 mb-3">
+            <h1 >Bebidas</h1> 
+        </div>
+
+        <main class="grid grid-cols-1 md:grid-cols-2  gap-4 mx-auto max-w-7xl">
+            <!--product-item-->
+            <div class="flex justify-start items-center px-2 gap-2 mb-4">
+            <img src="./assets/coca-zero.png" alt="coca-zero"
+            class="w-20 h-32 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+        <div>
+            <p class="capitalize font-bold text-white">coca-zero</p>
+            <span class="text-white font-medium text-sm">
+                Refrigerante Coca-cola 
+                <br>
+                Sem açucar
+            </span>
+            <div class="flex justify-between items-center gap-4">
+                <p class="text-white text-sm">R$ 5.90</p>
+                <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                data-name="Coca-zero"
+                data-price="5.90">
+                    <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!--end-product-item-->
+        <!--product-item-->
+            <div class="flex justify-start items-center px-2 gap-2 mb-4">
+                <img src="./assets/coca.png" alt="coca"
+                class="w-18 h-32 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">Coca-cola</p>
+                <span class="text-white font-medium text-sm">
+                    refrigerante coca-cola
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 5.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="Coca-cola"
+                    data-price="5.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+        <!--end-product-item-->
+        <!--product-item-->
+        <div class="flex justify-start items-center px-2 gap-2 mb-4">
+            <img src="./assets/sprite.png" alt="sprite"
+            class="w-20 h-32 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+        <div>
+            <p class="capitalize font-bold text-white">sprite</p>
+            <span class="text-white font-medium text-sm">
+                Refrigerante de limão
+            </span>
+            <div class="flex justify-between items-center gap-4">
+                <p class="text-white text-sm">R$ 5.90</p>
+                <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                data-name="sprite"
+                data-price="5.90">
+                    <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!--end-product-item-->
+        <!--product-item-->
+        <div class="flex justify-start items-center px-2 gap-2 mb-4">
+                <img src="./assets/monster.png" alt="monster"
+                class="w-20 h-32 hover:scale-110 hover:-rotate-3 duration-300">
+            <div>
+                <p class="capitalize font-bold text-white">monster</p>
+                <span class="text-white font-medium text-sm">
+                Energético Monster
+                </span>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="text-white text-sm">R$ 10.90</p>
+                    <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                    data-name="monster"
+                    data-price="10.90">
+                        <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+        <!--end-product-item-->
+        <!--product-item-->
+        <div class="flex justify-start items-center px-2 gap-2 mb-16">
+            <img src="./assets/heineken.png" alt="heineken"
+            class="w-20 h-32 rounded-md hover:scale-110 hover:-rotate-3 duration-300">
+        <div>
+            <p class="capitalize font-bold text-white">heineken</p>
+            <span class="text-white font-medium text-sm">
+                Cerveja heineken 
+            </span>
+            <div class="flex justify-between items-center gap-4">
+                <p class="text-white text-sm">R$ 10.90</p>
+                <button class="px-1 bg-green-700 rounded-md add-to-cart-btn"
+                data-name="Basicao"
+                data-price="19.90">
+                    <i class="fa-solid fa-cart-plus text-white text-sm"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!--end-product-item-->
+        </main>
+    </div>
+    <!--end-menu-->
+
+    <!--start-modal-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center"
+    id="cart-modal">
+        <div class="bg-black p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="capitalize text-white font-bold text-center text-2xl mb-2">Seu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total"> 0.00</span></p>
+
+            <p class="font-bold mb-2">Endereço de entrega:</p>
+                <input type="text"
+                placeholder="Digite seu endereço completo..."
+                id="address"
+                class="w-full border-2 p-1 text-black rounded outline-none">
+
+            <p class="text-red-400 font-semibold text-sm mt-1 hidden" id="address-warn">Digite seu endereço completo!</p>
+            <div class="mt-6 flex justify-between items-center">
+                <button id="checkout-btn" class="bg-green-500 text-white p-2 capitalize font-bold rounded-sm hover:scale-110 transition ease-in-out delay-150 duration-200  ">finalizar pedido</button>
+                <button id="close-modal-btn" class="bg-red-900 text-white p-2 capitalize font-bold rounded-sm hover:scale-110 transition ease-in-out delay-150 duration-200">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <!--end-modal-->
+
+    <footer class="w-full fixed bottom-0 z-40 flex items-center justify-center h-12 bg-green-950">
+        <button class=" hover:scale-110 trasition ease-in-out delay-200 duration-200 ">
+            (<span class="text-md font-extrabold" id="cart-count">0</span>)
+            <a id="cart-btn" class="font-bold text-sm">Ver meu carrinho</a>
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+        
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
