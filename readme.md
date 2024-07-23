@@ -1,9 +1,8 @@
-Aqui está o README.md para o projeto da South Burguer:
 
-```markdown
 # South Burguer
 
-![South Burguer](./path/to/your/image.png)
+![desktop](https://github.com/user-attachments/assets/39977b3d-e453-49c8-ba64-39617e1b1483)
+
 
 South Burguer é uma aplicação web desenvolvida para um restaurante fictício de hambúrgueres. O projeto foi construído utilizando HTML, CSS, TailwindCSS e JavaScript. A aplicação permite aos usuários visualizar o cardápio e enviar pedidos diretamente para o WhatsApp do restaurante.
 
@@ -30,8 +29,8 @@ South Burguer é uma aplicação web desenvolvida para um restaurante fictício 
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/username/south-burguer.git
-cd south-burguer
+git clone https://github.com/username/delivery_burguer.git
+cd delivery_burguer
 ```
 
 2. **Instale as dependências**
@@ -46,21 +45,6 @@ npm install
 npm start
 ```
 
-## Estrutura do Projeto
-
-```bash
-south-burguer/
-│
-├── index.html          # Estrutura HTML principal
-├── css/
-│   ├── styles.css      # Estilos personalizados
-│   └── tailwind.css    # Configuração do TailwindCSS
-├── js/
-│   ├── app.js          # Funcionalidades JavaScript
-│   └── api.js          # Integração com a API de envio de pedidos
-└── images/
-    └── mobile.png      # Imagem utilizada no README
-```
 
 ## Como Usar
 
@@ -78,7 +62,4 @@ Este projeto está licenciado sob a licença MIT.
 
 ---
 
-Desenvolvido por [Seu Nome](https://github.com/seu-usuario).
-```
-
-Lembre-se de substituir `path/to/your/image.png` pelo caminho correto da imagem dentro do seu projeto e `username` pelo seu nome de usuário no GitHub. Além disso, ajuste o link do repositório GitHub no comando de clone para refletir a URL correta do seu repositório.
+Desenvolvido por [Enzo](https://github.com/enzocdutra).
